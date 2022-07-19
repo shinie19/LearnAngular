@@ -1,0 +1,23 @@
+<div>
+  <label>Enter a first number:</label>
+  <input type="number" [(ngModel)]="firstNum" (ngModelChange)="onChange()">
+</div>
+<br>
+<div>
+  <label for="operation">Operation</label>
+  <select [(ngModel)]="operation" (ngModelChange)="onChange()">
+    <option value="addition">Addition</option>
+    <option value="subtraction">Subtraction</option>
+    <option value="multiplication">Multiplication</option>
+    <option value="division">Division</option>
+  </select>
+</div>
+<br>
+<div>
+  <label>Enter a second number:</label>
+  <input type="number" [(ngModel)]="secondNum" (ngModelChange)="onChange()">
+</div>
+<br>
+<div>
+  <h3>Result: {{result}}</h3>
+</div>
