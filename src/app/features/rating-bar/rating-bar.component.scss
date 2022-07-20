@@ -1,0 +1,21 @@
+.rating-bar {
+  display: flex;
+  gap: 8px;
+
+  .rating-unit {
+    width: 50px;
+    height: 50px;
+    background-color: darkgray;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+
+    .rating-unit__value {
+      color: white;
+    }
+  }
+  .active {
+    background-color: #f037c5;
+    transition: 0.4s ease;
+  }
+}

@@ -1,0 +1,9 @@
+<h2>Rating bar</h2>
+<div class="rating-bar">
+  <div *ngFor="let unit of ratingUnits" (click)="clicked(unit.value)" class="rating-unit"
+    [ngClass]="{'active': unit.isActive === true}">
+    <p class="rating-unit__value">{{unit.value}}</p>
+  </div>
+</div>
+
+<h3>Rating value: {{ratingValue}}</h3>
