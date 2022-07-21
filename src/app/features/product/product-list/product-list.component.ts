@@ -18,5 +18,8 @@ export class ProductListComponent implements OnInit {
 
   getAll() {
     this.products = this.productService.getAll();
+    this.products.sort(
+      (firstItem, secondItem) => (firstItem.id || 0) - (secondItem.id || 0)
+    );
   }
 }
